@@ -1,0 +1,77 @@
+.contact{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contact_left{
+    display: flex;
+    align-items: center;
+}
+.contact_right{
+    display: flex;
+    align-items: center;
+}
+.contact_left_text{
+    margin-left: 5px;
+}
+.contact_right_text{
+    margin-left:5px;
+}
+.Menu{
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.menu-center{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    font-size: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu-right{
+    display: flex;
+    align-items: center;
+}
+.menu-right-boxtext{
+    padding: 10px; 
+    background-color: #999;
+    border-radius: 5px; 
+    margin-right: 10px;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 700px;
+    width: 1325px;
+    margin: 0 auto;
+  }
+  
+  .slide-wrapper {
+    width: 3975px;
+    -webkit-animation: slide 14s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 700px;
+    width: 1325px;
+  }
+  
+  
+  @-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -1325px;}
+    50% {margin-left: -1325px;}
+    60% {margin-left: -2650px;}
+    80% {margin-left: -2650px;}
+  }
