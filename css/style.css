@@ -1,10 +1,14 @@
+.container-fluid{
+    padding: 0px;
+}
 .contact{
     color: white;
-    background-color: black;
+    background: hsla(0, 0%, 0%, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0px;
 }
 .contact_left{
     display: flex;
@@ -13,6 +17,7 @@
 .contact_right{
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 .contact_left_text{
     margin-left: 5px;
@@ -26,13 +31,14 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    position: fixed-bottom;
 }
 .menu-center{
     display: flex;
     justify-content: space-around;
-    width: 600px;
     font-size: 20px;
     color: black;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -41,6 +47,7 @@ a{
 .menu-right{
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 .menu-right-boxtext{
     padding: 10px; 
@@ -52,26 +59,110 @@ a{
 #slideshow {
     overflow: hidden;
     height: 700px;
-    width: 1325px;
+    width: 1349px;
     margin: 0 auto;
   }
   
   .slide-wrapper {
-    width: 3975px;
+    width: 4047px;
     -webkit-animation: slide 14s ease infinite;
   }
   
   .slide {
     float: left;
     height: 700px;
-    width: 1325px;
+    width: 1349px;
   }
   
   
   @-webkit-keyframes slide {
     20% {margin-left: 0px;}
-    30% {margin-left: -1325px;}
-    50% {margin-left: -1325px;}
-    60% {margin-left: -2650px;}
-    80% {margin-left: -2650px;}
+    30% {margin-left: -1349px;}
+    50% {margin-left: -1349px;}
+    60% {margin-left: -2698px;}
+    80% {margin-left: -2698px;}
   }
+  #tag{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  #vebitis{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .footer {
+    background: #222;
+    color: #aaa;
+    padding-top: 10px;
+  }
+  
+  .footer a {
+    color: #aaa;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+  }
+  
+  .footer h3 {
+   color: #0894d1;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+  }
+  
+  .footer .three-column {
+   overflow: hidden;
+  }
+  
+  .footer .three-column li{
+   width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+  }
+  
+  .footer .socila-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+  }
+  
+  .footer .socila-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+    overflow: 
+  }
+  @media (max-width: 767px) {
+    .container-fluid {
+      padding: 0;
+    }
+    .contact{
+        display: none;
+    }
+    .menu-center{
+        display: none;
+    }
+    .row {
+      margin: 0;
+    }
+    .g-col-6{
+        width: 100%;
+    }
+    .g-col-md-4{
+        width: 100%;
+    }
+    #slideshow{
+        width: 100%;
+    }
+    #slidehide{
+        display: none;
+    }
+    .col-md-6 .col-md-4 .col-md-3 .col-md-2{
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+}
+  
