@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITI'S</title>
     <link rel="icon" href="images/logo.jpg" type="images/logo.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
     <body>
-        <div class="container-fluid">
-            <div class="contact row fixed-bottom">
+        <div class="container-fluid" style="padding: 0px;">
+            <div id="contact" class="row fixed-bottom">
                 <div class="contact_left col-6">
                     <div style="margin-left: 20px;">Hotline:</div>
                     <div  class="contact_left_text" style="font-size: 20px; font-weight: 600;">1900216</div>
@@ -36,31 +31,52 @@
                     <div class="contact_right_text">Mua hàng tại shopify</div>
                 </div>
             </div>
-            <div class="Menu row fixed-top">
-                <div class="menu-left col-2">
-                    <div><img src="images/image1.png" alt=""></div>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgba(255, 255, 255, 0.5); padding: 0px 16px 0px 16px;">
+                <a class="navbar-brand" href="#"><img src="images/image1.png" alt="" width="100px" id="a"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between align-items-center" id="collapsibleNavId">
+                    <ul class="navbar-nav" style="padding-left: 300px;">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#vebitis">VỀ BITIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nam">NAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nu">NỮ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#treem">TRẺ EM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KHUYẾN MÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TUYỂN DỤNG</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex">
+                            <a href="#" class="nav-link"><input type="text" style="background-color: #999; border: 1px solid #999; padding: 10px; border-radius: 5px;" placeholder="🔎 Bạn cần tìm gì?"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class = "nav-link">
+                                <img src="images/user.png" alt="" width="45px" height="45px">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="menu-center col-7">
-                    <div><a href="#vebitis">VỀ BITIS</a></div>
-                    <div><a href="#nam">NAM</a></div>
-                    <div><a href="#nu">NỮ</a></div>
-                    <div><a href="#treem">TRẺ EM</a></div>
-                    <div><a href="#">KHUYẾN MÃI</a></div>
-                    <div><a href="#">TUYỂN DỤNG</a></div>
-                </div>
-                <div class="menu-right col-3">
-                    <div class="menu-right-boxtext"><input type="text" style="background-color: #999; border: 1px solid #999;" placeholder="🔎 Bạn cần tìm gì?"></div>
-                    <div><a href="login.html"><img src="images/user.png" alt="" width="45px" height="45px"></a></div>
-                </div>
-            </div>
-            <div id="slideshow">
+            </nav>
+            <div id="slideshow" style="margin-top: 100px;">
                 <div class="slide-wrapper row">
                     <div class="slide g-col-6 g-col-md-4"><img src="images/bia.png" width="1349px" height="700px"></div>
                     <div class="slide g-col-6 g-col-md-4"><img src="https://media.discordapp.net/attachments/1095768076248698941/1095772277817217034/image.png?width=959&height=372" width="1349px" height="700px"></div>
                     <div class="slide g-col-6 g-col-md-4"><img src="https://media.discordapp.net/attachments/1095768076248698941/1095772372923068506/image.png?width=959&height=374" width="1349px" height="700px"></div>
                 </div>
             </div>
-            <div class="text-center m-5">
+            <div class="text-center m-5" id="change">
                 <p> <i class="fas fa-angle-left"> </i> <i class="fas fa-credit-card"></i> <b>Miễn phí vận chuyển </b> với hóa đơn trên 1.5 triệu ở tất cả tỉnh thành<i class="fas fa-angle-right"></i></p>
             </div>
             <div class="row text-center">
@@ -72,7 +88,7 @@
                 <div style="margin-right: 50px;">SẢN PHẨM MỚI</div>
                 <div class="text-muted">SẢN PHẨM BÁN CHẠY</div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/00100cam_da38d34d9e894560851d3e6dddb85501_grande.jpg" alt="" width="200px" class="rounded"></div>
                     <div class="d-flex justify-content-between">
@@ -141,16 +157,16 @@
                 <div>
                     <div id="nam" class=""> <b>Nam</b></div>
                 </div>
-                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;">
-                    <div>Hunter</div>
-                    <div>Sandal</div>
-                    <div>Giày Thể Thao</div>
-                    <div>Giày Chạy Bộ</div>
-                    <div>Giày Đá Banh</div>
-                    <div>Giầy Tây</div>
+                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;" id="hide">
+                    <div id="hide">Hunter</div>
+                    <div id="hide">Sandal</div>
+                    <div id="hide">Giày Thể Thao</div>
+                    <div id="hide">Giày Chạy Bộ</div>
+                    <div id="hide">Giày Đá Banh</div>
+                    <div id="hide">Giầy Tây</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/00100cam_da38d34d9e894560851d3e6dddb85501_grande.jpg" alt="" width="200px" class="rounded"></div>
                     <div class="d-flex justify-content-between">
@@ -193,7 +209,7 @@
                     <div>Giày Thể Thao Nam <br>Hunter Core DSMH10900XAM</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/1.png" alt="" width="200px" class="rounded"></div>
                     <div class="d-flex justify-content-between">
@@ -240,16 +256,16 @@
                 <div>
                     <div id="nu" class=""> <b>Nữ</b></div>
                 </div>
-                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;">
-                    <div>Hunter</div>
-                    <div>Sandal</div>
-                    <div><b>Giày Thể Thao</b> </div>
-                    <div>Giày Chạy Bộ</div>
-                    <div>Giày Đá Banh</div>
-                    <div>Giầy Tây</div>
+                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;" id="hide">
+                    <div id="hide">Hunter</div>
+                    <div id="hide">Sandal</div>
+                    <div id="hide"><b>Giày Thể Thao</b> </div>
+                    <div id="hide">Giày Chạy Bộ</div>
+                    <div id="hide">Giày Đá Banh</div>
+                    <div id="hide">Giầy Tây</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/6.png" alt="" width="200px" class="rounded" height="200px"></div>
                     <div class="d-flex justify-content-between">
@@ -292,7 +308,7 @@
                     <div>Giày Cao Su <br>CWS03435623TRANG (Trắng)</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/11.png" alt="" width="200px" class="rounded" height="200px"></div>
                     <div class="d-flex justify-content-between">
@@ -339,16 +355,16 @@
                 <div>
                     <div id="treem" class=""> <b>Trẻ Em</b></div>
                 </div>
-                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;">
-                    <div>Hunter</div>
-                    <div>Sandal</div>
-                    <div>Giày Thể Thao</div>
-                    <div>Giày Chạy Bộ</div>
-                    <div>Giày Đá Banh</div>
-                    <div>Giầy Tây</div>
+                <div class="d-flex justify-content-around" style="width: 70%; margin-right: 30px;" id="hide">
+                    <div id="hide">Hunter</div>
+                    <div id="hide">Sandal</div>
+                    <div id="hide">Giày Thể Thao</div>
+                    <div id="hide">Giày Chạy Bộ</div>
+                    <div id="hide">Giày Đá Banh</div>
+                    <div id="hide">Giầy Tây</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/00100cam_da38d34d9e894560851d3e6dddb85501_grande.jpg" alt="" width="200px" class="rounded"></div>
                     <div class="d-flex justify-content-between">
@@ -391,7 +407,7 @@
                     <div>Giày Thể Thao Nam <br>Hunter Core DSMH10900XAM</div>
                 </div>
             </div>
-            <div id="tag">
+            <div id="tag" class="row">
                 <div>
                     <div><img src="images/1.png" alt="" width="200px" class="rounded"></div>
                     <div class="d-flex justify-content-between">
